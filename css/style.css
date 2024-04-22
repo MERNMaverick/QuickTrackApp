@@ -393,4 +393,7 @@ body.no-scroll {
   .material-symbols-outlined .smallButton {
     line-height: 48px;
   }
+  .material-symbols-outlined.iconButton{
+  display: block;
+  }
 }

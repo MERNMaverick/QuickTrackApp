@@ -31,12 +31,20 @@ function stopTimer() {
   closePopup();
 }
 
+function resetManualTaskForm() {
+  document.getElementById("manualActivityName").value = "";
+  document.getElementById("startTime").value = "";
+  document.getElementById("endTime").value = "";
+}
+
 function closePopup() {
   document.getElementById("taskPopup").style.display = "none";
   document.getElementById("manualTaskPopup").style.display = "none";
   document.getElementById("overlay").style.display = "none";
   document.body.classList.remove("no-scroll");
+  resetManualTaskForm();
 }
+
 
 function logManualEvent() {
   document.getElementById("manualTaskPopup").style.display = "block";
